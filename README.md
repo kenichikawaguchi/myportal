@@ -1,0 +1,2 @@
+MyPortal
+-- Django Project
