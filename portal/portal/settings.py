@@ -140,4 +140,7 @@ EMAIL_HOST = env.get_value('EMAIL_HOST')
 EMAIL_PORT = int(env.get_value('EMAIL_PORT'))
 EMAIL_HOST_USER = env.get_value('EMAL_HOST_USER')
 EMAIL_HOST_PASSWORD = env.get_value('EMAIL_HOST_PASSWORD')
-EMAIL_USE_TLS = env.get_value('EMAIL_USE_TLS')
+if env.get_value('EMAIL_USE_TLS') == "True":
+    EMAIL_USE_TLS = True
+else:
+    EMAIL_USE_TLS = False

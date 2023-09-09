@@ -64,7 +64,7 @@
               required autofocus>
         <input class="w-100 btn btn-lg btn-primary" type="submit" value="Log in">
         <br><br>
-        <p><a href="#">Did you forget password?</a></p>
+        <p><a href="{% url 'password_reset' %}">Did you forget password?</a></p>
         <input type="hidden" name="next" value="{% url 'page:index' %}">
       </form>
     </main>
