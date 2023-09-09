@@ -44,6 +44,7 @@
                 {% if user.is_authenticated %}
                 <li><a href="#" class="text-white">My Page</a></li>
                 <li><a href="{% url 'accounts:logout' %}" class="text-white">Log out</a></li>
+                <li><a href="{% url 'password_reset' %}" class="text-white">Password reset</a></li>
                 <li><a href="#" class="text-white">Password reset</a></li>
                 <li><a href="mailto:admin@example.com" class="text-white">Email me</a></li>
                 {% else %}
