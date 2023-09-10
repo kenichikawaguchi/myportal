@@ -9,6 +9,7 @@ urlpatterns = [
     path('password_reset/',
         auth_views.PasswordResetView.as_view(
             template_name = "password_reset.html",
+            email_template_name = "mail/password_reset_email.html",
         ),
         name = "password_reset",
     ),
